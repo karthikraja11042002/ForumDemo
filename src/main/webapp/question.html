@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>question</title>
+<style>
+      /* CSS for the home button */
+      .home-button {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      .home-button:hover {
+        background-color: #3e8e41;
+      }
+      /* CSS for the form */
+      form {
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type=userEmail], input[type=questionId], input[type=questionValue] {
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      input[type=submit] {
+        display: block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: #3e8e41;
+      }
+     
+    </style>
+</head>
+<body>
+	<h1>welcome to the admin question control page</h1>
+
+	<form action="admin/addQuestion">
+
+		Enter Email:<input type="text" name="userEmail" required="required"><br> <br>
+		Enter Question ID:<input type="text" name="questionId" required="required"><br> <br>
+		Enter Your Question:  <input type="text" name="questionValue" required="required"><br> <br> 
+		<input type="submit" value="ADD QUESTION">
+	</form>
+	<br>
+	 <form action="admin/viewQuestion">
+
+
+		Enter Question ID:<input type="text" name="questionId" required="required"> <input type="submit"
+			value="VIEW QUESTION">
+
+	</form>
+	<br>
+	<form action="admin/viewallQuestion">
+
+
+		<input type="submit" value="VIEWAll QUESTION">
+	</form>
+	
+	<form action="updateQuestion">
+
+
+	 Enter Email:<input type="text" name="userEmail" required="required"><br> <br> 
+	Enter Question ID:<input type="text" name="questionId" required="required"><br> <br>
+	Enter Your Question:<input type="text" name="questionValue" required="required"><br> <br><input
+		type="submit" value="UPDATE QUESTION">
+</form>
+<br>
+<form action="admin/deleteQuestion">
+
+
+	Enter Question ID:<input type="text" name="questionId" required="required"><br> <br> <input
+		type="submit" value="DELETE  QUESTION">
+</form>
+
+</body>
+</html>

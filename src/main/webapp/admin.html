@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>admin</title>
+
+<style>
+      /* CSS for the home button */
+      .home-button {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      .home-button:hover {
+        background-color: #3e8e41;
+      }
+      /* CSS for the form */
+      form {
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type=userName], input[type=userPassword], input[type=userEmail] {
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      input[type=submit] {
+        display: block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: #3e8e41;
+      }
+     
+    </style>
+</head>
+<body>
+      <h1>Welcome Admin</h1> 
+      <br>
+
+	<form action="admin/add">
+
+		ENTER USERNAME :<input type="text" name="userName" required="required"><br> <br> 
+		ENTER USERPASSWORD :<input type="text" name="userPassword" required="required"><br> <br> 
+		ENTER USEREMAIL :<input type="text" name="userEmail" required="required"><br> <br> 
+		<input type="submit" value="ADD USER">
+	</form>  	 	
+<br>
+<form action="admin/view">
+
+
+	ENTER USEREMAIL :<input type="text" name="userEmail" required="required"> <input
+		type="submit" value="VIEW">
+</form>
+<br>
+<form action="admin/viewall">
+
+
+	<input type="submit" value="VIEWAll">
+</form>
+<br>
+<form action="admin/update">
+
+
+	 ENTER USEREMAIL :<input type="text" name="userEmail" required="required"><br> <br> 
+	ENTER USERNAME :<input type="text" name="userName" required="required"><br> <br>
+	ENTER USERPASSWORD :<input type="text" name="userPassword" required="required"><br> <br><input
+		type="submit" value="UPDATE">
+</form>
+<br>
+<form action="admin/delete">
+
+
+	ENTER USEREMAIL :<input type="text" name="userEmail" required="required"><br> <br> <input
+		type="submit" value="DELETE">
+</form>
+<form action="user/validateUser">
+
+		Enter your USEREMAIL:<input type="text" name="userEmail"><br> <br> 
+		Enter your USERPASSWORD:<input type="password" name="userPassword"><br> <br> 		
+		<input type="submit" value="login">
+	</form>  
+ 
+<a href="question.html">Question</a>
+<a href="answer.html">Answer</a>
+
+</body>
+</html>
